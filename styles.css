@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 100;
+    padding: 0;
+    height: 5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    height: 100%;
+}
+
+.nav-left {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-left a {
+    height: 100%;
+}
+
+.nav-left img {
+    height: 100%;
+    width: auto;
+}
+
+.logo {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav_items {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: white;
+    text-align: right;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav_item {
+    margin-left: 400px;
+}
+
+.nav_links {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_links:hover {
+    color: wheat;
+}
+
+.nav-right {
+    display: flex;
+}
+
+.button {
+    padding: 6px 15px;
+    border: 2px solid;
+    background: transparent;
+    border-radius: 8px;
+    border-color: aliceblue;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(29,25,94,1) 0%, rgba(13,85,99,0.9809173669467787) 100%);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.form_container {
+    position: absolute;
+    max-width: 320px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    background: #fff;
+    padding: 22px;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.signup_form {
+    display: none;
+}
+
+.form_close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: black;
+    font-size: 22px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.form_container h2 {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+
+.input_box {
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input_box input:focus {
+    border-color: purple;
+}
+
+.input_box input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 0 15px;
+    border-bottom: 1.5px solid #aaaaaa;
+    color: grey;
+    transition: all 0.2s ease;
+}
+
+.input_box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.input_box i.email,
+.input_box i.password {
+    left: 0;
+    color: grey;
+}
+
+.input_box input:focus~i.password,
+.input_box input:focus~i.email {
+    color: purple;
+}
+
+.input_box i.pw_hide {
+    right: 0;
+    font-size: 18px;
+}
+
+.option_field {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form_container a {
+    font-size: 12px;
+    color: #000;
+}
+
+.form_container a:hover {
+    text-decoration: underline;
+}
+
+.checkbox {
+    display: flex;
+    column-gap: 8px;
+    white-space: nowrap;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.checkbox label {
+    font-size: 12px;
+    color: black;
+    user-select: none;
+}
+
+.checkbox input {
+    accent-color: blue;
+}
+
+.form_container .button {
+    background-color: rgba(2, 2, 74, 0.822);   
+    margin-top: 8px;
+    width: 100%;
+    color: white;
+}
+
+.login_signup {
+    font-size: 16px;
+}
+
+.logo {
+    color: white;
+}
+
