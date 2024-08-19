@@ -19,5 +19,3 @@ Usage:
 -Viewing Transactions: The transactions will be listed in the table below the form.
 -Visualizing Spending: The chart will display a graphical representation of your spending.
 -User Authentication: Use the signup form to create an account and the login form to access your account.
-
--
