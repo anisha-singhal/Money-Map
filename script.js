@@ -1,5 +1,4 @@
-
-document.getElementById('form-open').addEventListener('click', () => {
+document.getElementById('form-open')?.addEventListener('click', () => {
     document.querySelector('.form_container').classList.toggle('show');
 });
 
@@ -26,7 +25,7 @@ document.querySelector('.login_form form').addEventListener('submit', (e) => {
     const storedUser = JSON.parse(localStorage.getItem('user'));
     if (storedUser && storedUser.email === email && storedUser.password === password) {
         alert('Login successful!');
-        window.location.href = 'main.html'; // Redirect to main page
+        window.location.href = 'tracker.html'; // Redirect to main page
     } else {
         alert('Invalid credentials');
     }
@@ -42,6 +41,6 @@ document.querySelector('.signup_form form').addEventListener('submit', (e) => {
     alert('Signup successful!');
     document.querySelector('.signup_form').style.display = 'none';
     document.querySelector('.login_form').style.display = 'block';
-    // Optionally, you can automatically log in the user after signup
+    
     window.location.href = 'main.html'; // Redirect to main page
 });

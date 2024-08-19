@@ -15,8 +15,10 @@ body {
 
 /* Navigation styling */
 nav {
-    position: fixed;
+    position: sticky;
     top: 0;
+
+    
     width: 100%;
     background: linear-gradient(90deg, rgba(29,25,94,1) 0%, rgba(13,85,99,0.9809173669467787) 100%);
     padding: 1rem 2rem;
